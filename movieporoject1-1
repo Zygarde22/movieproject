@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Gump</title>
+</head>
+<body>
+    <main id="main">
+        <h1 id="title">Forest Gump</h1>
+        <h2>A Seminal Movie of the 20th Century</h2>
+        <p>Forest Gump, is a movie about a mentally challanged man named Forest, who across seveeral years meets and shapes American histgory</p>
+		<a href="another-page.html">Cast</a>
+		<a href="contactinfo.html"> Contact Info</a>
+    </main>
+</body>
+</html>
