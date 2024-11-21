@@ -1,15 +1,76 @@
+/* General Body Styles */
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     text-align: center;
-    background-color: #7cacbe;
+    background-color: #7cacbe; /* Soft blue background */
     margin: 0;
     padding: 0;
+    color: #333; /* Neutral text color */
 }
 
+/* Main Section Styling */
 #main {
     margin: 20px;
+    background: #ffffff; /* Adds a white card-like background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
+/* Image Styling */
 img {
-    border: 2px solid #917676;
-    border-radius: 10px;
+    border: 2px solid #917676; /* Matches the theme */
+    border-radius: 50%; /* Makes the image circular */
+    width: 200px; /* Ensures consistent size */
+    margin: 20px auto; /* Centers the image */
+    display: block; /* Ensures block-level alignment */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds animation */
+}
+
+img:hover {
+    transform: scale(1.1); /* Grows slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Intensifies shadow */
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Dark slate color for the title */
+    margin-top: 10px;
+}
+
+/* Link Styling */
+a {
+    color: #2980b9; /* Blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c; /* Changes to red on hover */
+    border-bottom: 2px solid #e74c3c; /* Adds an underline effect */
+}
+
+/* Email and Portfolio Text Styling */
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #34495e; /* Slightly darker text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    img {
+        width: 150px; /* Smaller image size for mobile */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

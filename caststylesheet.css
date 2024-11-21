@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f9; /* Light neutral background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333; /* Dark text for readability */
+}
+
+/* Main Content */
+#main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #ffffff; /* White background for content area */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue for contrast */
+}
+
+/* Cast Section */
+.cast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+}
+
+/* Cast Member Card */
+.cast-member {
+    background: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Card shadow for a clean look */
+    padding: 15px;
+    width: 250px; /* Fixed width for consistency */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effect for Cards */
+.cast-member:hover {
+    transform: translateY(-10px); /* Lifts the card slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+
+/* Cast Images */
+.cast-image {
+    border-radius: 10px;
+    width: 100%; /* Full width of the card */
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for images */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.cast-image:hover {
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Cast Member Details */
+h2 {
+    font-size: 1.5rem;
+    color: #34495e; /* Slightly lighter dark blue */
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #7f8c8d; /* Muted grey for supporting text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cast {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center;
+    }
+
+    .cast-member {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
